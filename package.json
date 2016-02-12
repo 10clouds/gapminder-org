@@ -22,8 +22,9 @@
     "karma-local": "NODE_ENV=test ./node_modules/.bin/karma start .config/karma.conf.js",
     "karma-sauce": "NODE_ENV=test ./node_modules/.bin/karma start .config/karma-sauce.conf.js",
     "karma-bstack": "NODE_ENV=test ./node_modules/.bin/karma start .config/karma-browserstack.conf.js",
-    "e2e": " ./node_modules/.bin/protractor ./.config/protractor.conf.js",
-    "e2e:live": " ./node_modules/.bin/protractor ./.config/protractor.conf.js --elementExplorer",
+    "e2e": " ./node_modules/.bin/protractor .config/protractor.conf.js",
+    "e2e-bstack": " ./node_modules/.bin/protractor .config/protractor-browserstack.conf.js",
+    "e2e:live": " ./node_modules/.bin/protractor .config/protractor.conf.js --elementExplorer",
     "write-changelog": "./node_modules/.bin/conventional-changelog -i CHANGELOG.md -s -p angular"
   },
   "dependencies": {

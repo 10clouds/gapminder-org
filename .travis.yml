@@ -32,14 +32,14 @@ before_script:
 script:
 # run local karma tests
 - npm test
-# run protractor tests
-- npm run e2e
 # submit coverage report to coveralls
 - cat ./coverage/report-lcov/lcov.info | ./node_modules/.bin/coveralls --verbose
 # run karma tests at browser stack
-- npm run karma-sauce
+- npm run karma-bstack
 # run karma tests at sauce labs
 #- npm run karma-sauce
+# run protractor tests
+- npm run e2e-bstack
 
 addons:
   # sauce labs tunel connector (read more https://docs.travis-ci.com/user/sauce-connect/ )
